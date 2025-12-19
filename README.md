@@ -40,3 +40,12 @@ graph TD;
     B -->|Input Data| C[Trained ML Model .pickle];
     C -->|Predicted Price| B;
     B -->|JSON Response| A;
+```
+Launch the Frontend
+
+Open client/app.html in your web browser.
+
+👤 Author
+Nazik - Undergraduate | Data Science & Machine Learning Enthusiast
+
+LinkedIn Profile (www.linkedin.com/in/nazikhassan11)
