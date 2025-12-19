@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Property Estimator</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script defer src="app.js"></script>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <div class="property-estimator-container">
+      <div class="property-estimator-card">
+        <h1 class="title">Property Estimator</h1>
+        <p class="subtitle">AI-POWERED VALUATION</p>
+        <form class="estimator-form">
+          <label class="label" for="area">AREA DETAILS</label>
+          <div class="input-group">
+            <input type="number" id="area" class="input" placeholder="2400" />
+            <span class="input-suffix">Sq. Ft.</span>
+          </div>
+          <span id="area-error" class="error-message"></span>
+
+          <div class="row">
+            <div class="col">
+              <label class="label">BEDROOMS (BHK)</label>
+              <div class="option-group" id="bedrooms">
+                <button type="button" class="option-btn">1</button>
+                <button type="button" class="option-btn">2</button>
+                <button type="button" class="option-btn">3</button>
+                <button type="button" class="option-btn">4</button>
+                <button type="button" class="option-btn">5</button>
+              </div>
+              <span id="bedrooms-error" class="error-message"></span>
+            </div>
+            <div class="col">
+              <label class="label">BATHROOMS</label>
+              <div class="option-group" id="bathrooms">
+                <button type="button" class="option-btn">1</button>
+                <button type="button" class="option-btn">2</button>
+                <button type="button" class="option-btn">3</button>
+                <button type="button" class="option-btn">4</button>
+                <button type="button" class="option-btn">5</button>
+              </div>
+              <span id="bathrooms-error" class="error-message"></span>
+            </div>
+          </div>
+
+          <label class="label" for="location">LOCATION</label>
+          <div class="input-group autocomplete-wrapper">
+            <input
+              type="text"
+              id="location"
+              class="input"
+              placeholder="Start typing location..."
+              autocomplete="off"
+            />
+            <div id="locationDropdown" class="autocomplete-dropdown"></div>
+          </div>
+          <span id="location-error" class="error-message"></span>
+
+          <button
+            type="button"
+            class="calculate-btn"
+            onclick="onClickedEstimatedPrice(); return false;"
+          >
+            Calculate Valuation <span class="arrow">→</span>
+          </button>
+        </form>
+
+        <div class="valuation-result">
+          <div class="result-label">ESTIMATED MARKET VALUE</div>
+          <div class="result-value">110 Lakh</div>
+          <!-- <div class="result-updated">Updated just now</div> -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
