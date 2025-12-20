@@ -48,4 +48,4 @@ Open client/app.html in your web browser.
 👤 Author
 Nazik - Undergraduate | Data Science & Machine Learning Enthusiast
 
-LinkedIn Profile (www.linkedin.com/in/nazikhassan11)
+LinkedIn Profile www.linkedin.com/in/nazikhassan11
